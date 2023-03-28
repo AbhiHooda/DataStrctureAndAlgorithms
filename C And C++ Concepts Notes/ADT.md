@@ -68,6 +68,7 @@ Advantages:
 	Data Structure Independence: ADTs can be implemented using different data structures, which can make it easier to adapt to changing needs and requirements.
 	Information Hiding: ADTs can protect the integrity of data by controlling access and preventing unauthorized modifications.
 	Modularity: ADTs can be combined with other ADTs to form more complex data structures, which can increase flexibility and modularity in programming.
+
 Disadvantages:
 	Overhead: Implementing ADTs can add overhead in terms of memory and processing, which can affect performance.
 	Complexity: ADTs can be complex to implement, especially for large and complex data structures.

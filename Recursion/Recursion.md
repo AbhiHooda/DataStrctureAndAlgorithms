@@ -81,3 +81,20 @@ b) Head Recursion : When function is doing processing at returning time. Not eai
 c) Tree Recursion
 d) Indirect Recursion
 e) Nested Recursion
+
+Tail and Head Recursion are linear Recursion.
+Tree Recursion: When function is calling itself multiple times.
+
+Time compleity for Tree recursion can be calculated w=by checking number of functin calls were made at each level. Space compleity will be the height of the tree.
+
+Indirect Recursion : there may be more then one function and they call each other in circular manner.
+
+Nested Recursion: In nested recursion parameter is passed as recursive call. 
+
+e.g : int fun(int n)
+	  {
+	  	if (n > 100)
+	  		return n - 10;
+	  	else
+	  		return fun(fun(n + 1));
+	  }	

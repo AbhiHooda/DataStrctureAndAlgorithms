@@ -71,7 +71,7 @@ Static Variable in Recursion:
 
 	 a) text/code : stores the compiled code for the program.
 	 b) data : stores global and static variables.
-	 c) statck : stores function call records
+	 c) stack : stores function call records
 	 d) heap : used for dynamic allocated memory.
 
 Types of Recursions:
@@ -79,17 +79,8 @@ Types of Recursions:
 a) Tail Recursion : can be easily convert to loop, better to use loop if program is using Tail recursion as loop will save memory because recursion will internally uses stack for recrsive calls.
 b) Head Recursion : When function is doing processing at returning time. Not eaily converted to loop, but it can be converted.
 c) Tree Recursion
-d) Indirect Recursion
-e) Nested Recursion
-
-Tail and Head Recursion are linear Recursion.
-Tree Recursion: When function is calling itself multiple times.
-
-Time compleity for Tree recursion can be calculated w=by checking number of functin calls were made at each level. Space compleity will be the height of the tree.
-
-Indirect Recursion : there may be more then one function and they call each other in circular manner.
-
-Nested Recursion: In nested recursion parameter is passed as recursive call. 
+d) Indirect Recursion : there may be more then one function and they call each other in circular manner.
+e) Nested Recursion: In nested recursion parameter is passed as recursive call. 
 
 e.g : int fun(int n)
 	  {
@@ -98,3 +89,9 @@ e.g : int fun(int n)
 	  	else
 	  		return fun(fun(n + 1));
 	  }	
+
+Tail and Head Recursion are linear Recursion.
+Tree Recursion: When function is calling itself multiple times.
+
+Time compleity for Tree recursion can be calculated by checking number of functin calls were made at each level. Space compleity will be the height of the tree.
+

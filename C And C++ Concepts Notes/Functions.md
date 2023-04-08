@@ -1,7 +1,7 @@
 Functions
 	A function is a group of related instructions to perform a specifc task. A function is also known as module or procedure.
 
-	if we put all instructions in main then this type of programming is known as monolithic programming, breaking down of program into smaller task or procedure is known as modular or procedural programming, benefit of this is increased productivity, code reusabillity and managining and testing of code will e easy as we need to test each individual procedures. 
+	if we put all instructions in main then this type of programming is known as monolithic programming, breaking down of program into smaller task or procedure is known as modular or procedural programming, benefit of this is increased productivity, code reusabillity and managining and testing of code will be easy as we need to test each individual procedures. 
 
 	So c is a procedural or modular programming language.
 
@@ -104,7 +104,7 @@ Examples:
 		fun(t);
 	}
 
-	Takeaway : When a structure is passed by valueeven it is having an array, it will be passed by value not address.
+	Takeaway : When a structure is passed by value even it is having an array, it will be passed by value not address.
 
 Notes:
 	References are internally created using pointer which support implecit referencing and dereferencing, code may behave like a monolithic program(compiler dependent).

@@ -4,7 +4,7 @@ Pointers:
 
 	Pointers are used for indirect access of the data.
 
-	A Program can directlt access its data and stack memory but it cannot access heap or other resources directly so we need pointers to those resources inside our program.
+	A Program can directly access its data and stack memory but it cannot access heap or other resources directly so we need pointers to those resources inside our program.
 
 	e.g: 
 		A program cannot directly access a file stored on the HDD so we need a pointer of file type to access that file.

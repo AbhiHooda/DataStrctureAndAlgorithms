@@ -42,6 +42,7 @@ Dereferencing a pointer:
 	int x = 5;
 	int *p = &x;
 	cout<< *p; // this will print 5
+	cout<< p[0]; // this will print value at index 0 , not adviceable but pointer can be dereferenced using [] brackets
 	cout<< p; //this will print the address of variable x.
 
 Free memory alloated in heap(deallocating)

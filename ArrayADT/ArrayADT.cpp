@@ -114,7 +114,7 @@ int binarySearhItr(struct ArrayADTStatic arr, int key)
 	while(low <= high)
 	{
 		mid = low + (high - low)/ 2; // this is done to avoid overflow 
-		cout << "mid : " << mid << endl; 
+		// cout << "mid : " << mid << endl; 
 		if (arr.A[mid] == key)
 		{
 			return mid;
@@ -131,13 +131,14 @@ int binarySearhItr(struct ArrayADTStatic arr, int key)
 	return -1;
 }
 
-int binarySearhR(int arr[], int key, int low, int high)
+int binarySearhR(int arr[], int low, int high, int key)
 {
 	if (low > high)
 	{
 		return -1;
 	}
 	int mid = low + (high - low)/2;
+	// cout << "mid : " << mid << endl; 
 	if (arr[mid] == key)
 	{
 		return mid;
@@ -152,6 +153,63 @@ int binarySearhR(int arr[], int key, int low, int high)
 	}
 }
 
+int Get(struct ArrayADTStatic arr, int index)
+{
+	if (index >= 0 && index < arr.length)
+	{
+		return arr.A[index];
+	}
+	return -1;
+}
+
+void Set(struct ArrayADTStatic *arr, int index, int val)
+{
+	if (index >= 0 && index < arr->length)
+	{
+		arr->A[index] = val;
+	}
+}
+
+int Max(struct ArrayADTStatic arr)
+{
+	int maxNow = arr.A[0];
+	for(int i = 1; i < arr.length; i++)
+	{
+		if (maxNow > arr.A[i])
+		{
+			maxNow = arr.A[i];
+		}
+	}
+	return maxNow;
+}
+
+int Sum(struct ArrayADTStatic arr)
+{
+	int sum = 0;
+	for(int i = 0; i < arr.length; i++)
+	{
+		sum += arr.A[i];
+	}
+	return sum;
+}
+
+float Avg(struct ArrayADTStatic arr)
+{
+	return Sum(arr)/arr.length;
+}
+
+int Min(struct ArrayADTStatic arr)
+{
+	int minNow = arr.A[0];
+	for(int i = 1; i < arr.length; i++)
+	{
+		if (minNow < arr.A[i])
+		{
+			minNow = arr.A[i];
+		}
+	}
+	return minNow;
+}
 
 int main()
 {
@@ -172,8 +230,8 @@ int main()
 	// Insert(&arr, 2, 9);
 	// Delete(&arr, 4);
 	// cout << "Key at index : " << LinearSearch(arr, 6) << endl;
-	cout << "key at index : " << binarySearhItr(arr, 4) << endl;
-	// cout << "key at index : " << binarySearhR(arr.A,0, arr.length - 1, 4);
-	Display(arr);
+	// cout << "key at index : " << binarySearhItr(arr, 4) << endl;
+	cout << "key at index : " << binarySearhR(arr.A,0, arr.length - 1, 4);
+	// Display(arr);
 	return 0;
 }
